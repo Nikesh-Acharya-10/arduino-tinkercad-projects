@@ -27,9 +27,10 @@ Traditional street lights often operate on manual schedules, leading to unnecess
 
 The circuit design was created and verified inside Tinkercad Circuits.
 
-![Automatic Street Light Circuit](circuit/circuit.png)
+![Automatic Street Light Circuit](./circuit/output%20of%20circuit.png)
 
 ### Pin Mapping
+output of circuit
 
 | Component | Component Pin | Arduino Pin / Rail |
 | :--- | :--- | :--- |
