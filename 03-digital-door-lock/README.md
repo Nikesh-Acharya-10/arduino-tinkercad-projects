@@ -2,9 +2,6 @@
 
 An Arduino-based digital security door lock system utilizing a 4x4 Keypad, Servo Motor, and a 16x2 LCD display to grant or deny access based on password input.
 
-## 🔗 Live Tinkercad Simulation
-[Click here to view and test the circuit in Tinkercad](INSERT_YOUR_TINKERCAD_LINK_HERE)
-
 ---
 
 ## 📸 Circuit Diagrams
