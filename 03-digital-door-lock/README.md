@@ -58,4 +58,4 @@ An Arduino-based digital security door lock system utilizing a 4x4 Keypad, Servo
 ---
 
 ## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
