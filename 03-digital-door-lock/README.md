@@ -1,23 +1,118 @@
-# Digital Door Lock
+# \# Project 03: Digital Door Lock
 
-An Arduino-based digital door lock system built using Tinkercad.
+# 
 
-## Components
+# An Arduino-based digital security door lock system utilizing a 4x4 Keypad, Servo Motor, and a 16x2 LCD display to grant or deny access based on password input.
 
-- Arduino Uno R3
-- 4x4 Keypad
-- Servo Motor
-- 16x2 LCD
-- Breadboard
-- Jumper Wires
+# 
 
-## Features
+# \## 📸 Circuit Diagrams
 
-- Password-based access
-- Servo motor lock/unlock
-- LCD status messages
-- Wrong password detection
+# 
 
-## Project Status
+# \### Before Entering Password (Locked State)
 
-🚧 In Progress
+# !\[Circuit Diagram Before Password](./circuit/circuit%20diagram%20before%20password.png)
+
+# 
+
+# \### After Entering Password (Unlocked State)
+
+# !\[Circuit Diagram After Password](./circuit/circuit%20diagram%20after%20password.png)
+
+# 
+
+# \---
+
+# 
+
+# \## 🛠 Components Used
+
+# \- Arduino Uno R3
+
+# \- 4x4 Keypad
+
+# \- Micro Servo Motor
+
+# \- 16x2 LCD Display
+
+# \- 220Ω Resistor
+
+# \- Breadboard \& Jumper Wires
+
+# 
+
+# \---
+
+# 
+
+# \## 📌 Pinout Mapping
+
+# 
+
+# | Component | Component Pin | Arduino Pin / Connection |
+
+# | :--- | :--- | :--- |
+
+# | \*\*Servo Motor\*\* | Signal | Digital Pin 9 |
+
+# | \*\*Servo Motor\*\* | VCC / GND | 5V / GND Rail |
+
+# | \*\*Keypad\*\* | Rows 1 – 4 | Digital Pins 2, 3, 4, 5 |
+
+# | \*\*Keypad\*\* | Columns 1 – 4 | Digital Pins 6, 7, 8, 10 |
+
+# | \*\*LCD Display\*\* | RS, E | Digital Pins 11, 12 |
+
+# | \*\*LCD Display\*\* | Data Pins (D4 – D7) | Analog Pins A0, A1, A2, A3 |
+
+# | \*\*LCD Display\*\* | VSS, VDD, V0, RW | GND, 5V, GND, GND |
+
+# | \*\*LCD Backlight\*\* | LED+ (Anode) | 5V via 220Ω Resistor |
+
+# | \*\*LCD Backlight\*\* | LED- (Cathode) | GND |
+
+# 
+
+# \---
+
+# 
+
+# \## 🚀 How It Works
+
+# 1\. The system defaults to a \*\*Locked\*\* state with the Servo at \*\*0°\*\*.
+
+# 2\. The LCD displays `Enter Password:`.
+
+# 3\. The user inputs keys via the 4x4 Keypad:
+
+# &#x20;  - Typing digits masks the output on the LCD with `\*`.
+
+# &#x20;  - Pressing `#` acts as \*\*Enter\*\* to verify the password.
+
+# &#x20;  - Pressing `\*` acts as \*\*Clear\*\* to reset the input buffer.
+
+# 4\. \*\*Correct Password (`1234`)\*\*:
+
+# &#x20;  - LCD displays `Access Granted!`.
+
+# &#x20;  - Servo motor rotates to \*\*90°\*\* to open the lock.
+
+# &#x20;  - Remains unlocked for 4 seconds before re-locking automatically.
+
+# 5\. \*\*Incorrect Password\*\*:
+
+# &#x20;  - LCD displays `Wrong Password!`.
+
+# &#x20;  - System prompts for re-entry.
+
+# 
+
+# \---
+
+# 
+
+# \## 📜 License
+
+# This project is licensed under the MIT License - see the \[LICENSE](../LICENSE) file for details.
+
