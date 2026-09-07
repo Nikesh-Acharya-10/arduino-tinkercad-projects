@@ -6,17 +6,20 @@ An Arduino-based vehicle reverse parking assistant using an HC-SR04 Ultrasonic D
 ## 📸 Circuit Diagrams
 
 ### 1. Idle / Initial Setup (Before Code)
-(./circuit/circuit%20diagram%20before%20code.png)
+
+![Idle / Initial Setup](./circuit/circuit%20diagram%20before%20code.png)
 
 ### 2. Safe State (> 30 cm) — Green LED ON
-(./circuit/circuit%20diagram%20in%20safestate.png)
 
-### 4. Danger State (≤ 15 cm) — Red LED ON & Buzzer Alarm
-(./circuit/circuit%20diagram%20in%20dangerstate.png)
+![Safe State](./circuit/circuit%20diagram%20in%20safestate.png)
 
-### 4. schematic diagram
-(./circuit/schematic%20diagram.png)
+### 3. Danger State (≤ 15 cm) — Red LED ON & Buzzer Alarm
 
+![Danger State](./circuit/circuit%20diagram%20in%20dangerstate.png)
+
+### 4. Schematic Diagram
+
+![Schematic Diagram](./circuit/schematic%20diagram.png)
 ---
 ## 📌 Pinout Mapping
 
